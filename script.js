@@ -70,3 +70,10 @@ console.log(myArr5);
 const myArr6 = [1, 2, 3];
 myArr6.unshift(4, 5, 6);
 console.log(myArr6);
+
+const myArr7 =  ['js', 'css', 'jq'];
+console.log(myArr7[0]);
+myArr7.shift();
+const myArr8 =  ['js', 'css', 'jq'];
+console.log(myArr8[myArr8.length-1]);
+myArr8.pop();
