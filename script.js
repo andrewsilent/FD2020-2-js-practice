@@ -2,7 +2,7 @@
 
 //минимальное значение
 const showMin = function showMin() {
-  if(!isNaN){
+  if (!isNaN) {
     let min = arguments[0];
     for (let i = 0; i < arguments.length; i++) {
       if (arguments[i] < min) {
@@ -16,7 +16,7 @@ const showMin = function showMin() {
 
 // максимальное значение
 const showMax = function showMax() {
-  if(!isNaN){
+  if (!isNaN) {
     let max = arguments[0];
     for (let i = 0; i < arguments.length; i++) {
       if (arguments[i] > max) {
@@ -40,15 +40,15 @@ const showMiddleValue = function showMiddleValue(someArray) {
 
 
 // случайное число от 0 до 100
-const randomValue = function randomValue(){
-  return Math.ceil(Math.random()*100);
+const randomValue = function randomValue() {
+  return Math.ceil(Math.random() * 100);
 }
 console.log(randomValue());
 
 
 // массив из 10 случайных чисел
 const randomArray = [];
-for (let i=0; i<10; i++) {
+for (let i = 0; i < 10; i++) {
   randomArray.push(randomValue());
 }
 console.log(randomArray);
@@ -71,9 +71,15 @@ const myArr6 = [1, 2, 3];
 myArr6.unshift(4, 5, 6);
 console.log(myArr6);
 
-const myArr7 =  ['js', 'css', 'jq'];
+const myArr7 = ['js', 'css', 'jq'];
 console.log(myArr7[0]);
 myArr7.shift();
-const myArr8 =  ['js', 'css', 'jq'];
-console.log(myArr8[myArr8.length-1]);
+const myArr8 = ['js', 'css', 'jq'];
+console.log(myArr8[myArr8.length - 1]);
 myArr8.pop();
+
+const myArr9 = [1, 2, 3, 4, 5];
+const myArr10 = myArr9.slice(0, 3);
+console.log(myArr10);
+const myArr11 = myArr9.slice(-2);
+console.log(myArr11);
